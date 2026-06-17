@@ -13,8 +13,8 @@
 // permissions and limitations under the License. See the AUTHORS file
 // for names of contributors.
 
-//go:build (amd64 || amd64p32 || arm64) && !windows && gc && go1.5
-// +build amd64 amd64p32 arm64
+//go:build (amd64 || amd64p32 || arm64 || riscv64) && !windows && gc && go1.5
+// +build amd64 amd64p32 arm64 riscv64
 // +build !windows
 // +build gc
 // +build go1.5
