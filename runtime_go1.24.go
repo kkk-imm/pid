@@ -1,5 +1,5 @@
-//go:build gc && go1.9 && !go1.24
-// +build gc,go1.9,!go1.24
+//go:build gc && go1.24 && !go1.25
+// +build gc,go1.24,!go1.25
 
 package goid
 
@@ -29,6 +29,7 @@ type g struct {
 	sched        gobuf
 	syscallsp    uintptr
 	syscallpc    uintptr
+	syscallbp    uintptr
 	stktopsp     uintptr
 	param        uintptr
 	atomicstatus uint32
